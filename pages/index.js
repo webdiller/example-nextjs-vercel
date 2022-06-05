@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
+  console.log('NEXT_PUBLIC_STRIPE_DEV: ', process.env.NEXT_PUBLIC_STRIPE_DEV);
   return (
     <div className={styles.container}>
       <Head>
