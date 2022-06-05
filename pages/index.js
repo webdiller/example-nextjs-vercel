@@ -14,7 +14,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          PROD
+          DEV BRANCH
         </h1>
 
         <p className={styles.description}>
@@ -59,7 +59,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          PROD
+          DEV BRANCH
         </a>
       </footer>
     </div>
