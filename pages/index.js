@@ -2,9 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
-export default function Home({isPreview}) {
-  console.log('isPreview: ', isPreview);
-  console.log('NEXT_PUBLIC_STRIPE_DEV: ', process.env.NEXT_PUBLIC_STRIPE_DEV);
+export default function Home() {
+  console.log('NEXT_PUBLIC_STRIPE: ', process.env.NEXT_PUBLIC_STRIPE);
   return (
     <div className={styles.container}>
       <Head>
@@ -65,14 +64,4 @@ export default function Home({isPreview}) {
       </footer>
     </div>
   )
-}
-
-
-export async function getStaticProps(ctx) {
-
-  return {
-    props: {
-      isPreview: ctx.preview || null,
-    }
-  };
 }
