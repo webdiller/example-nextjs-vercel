@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
 
-  console.log('NEXT_PUBLIC_STRIPE_PROD: ', process.env.NEXT_PUBLIC_STRIPE_PROD);
+  console.log('NEXT_PUBLIC_STRIPE: ', process.env.NEXT_PUBLIC_STRIPE);
   return (
     <div className={styles.container}>
       <Head>
@@ -19,7 +19,7 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          Get started by editing{' '}
+          Get started by editing
           <code className={styles.code}>pages/index.js</code>
         </p>
 
